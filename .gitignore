@@ -1,0 +1,4 @@
+.vscode/
+.sass-cache/
+style.scss.min.css
+style.scss.min.css.map
