@@ -12,7 +12,7 @@ Carousel Google Map
 -------------------
 Carousel slides for events feature a google map to the venue location which should look like this: 
 
-![Cow Palace Map](https://maps.googleapis.com/maps/api/staticmap?size=200x180&zoom=13&center=37.706765%2C-122.418738&markers=37.706765%2C-122.418738&key=AIzaSyAi62kmfaIqeCbvdbHOMRnAV2FClHNhyvg)
+![Cow Palace Map](./readme-resources/CowPalaceMap.png)
 
 (*This is a map to the Cow Palace in Daly City at zoom level 13*)
 
