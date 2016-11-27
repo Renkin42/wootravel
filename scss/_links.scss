@@ -1,0 +1,22 @@
+a {
+    color: royalblue;
+
+    &:visited {
+        color: purple;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: midnightblue;
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}

@@ -1,0 +1,33 @@
+#top-carousel {
+    .item>img {
+        height: 300px;
+	    width: 100%;
+	    object-fit: cover;
+	    -webkit-filter: blur(10px);
+	    filter: blur(10px);
+    }
+
+    .carousel-control {
+        color: #222;
+        width: 7%;
+        background-image: none;
+
+        &:visited {
+            color: #222;
+        }
+
+        &:hover {
+            color: #eee;
+        }
+    }
+
+    .carousel-indicators {
+        li {
+            border-color: #222;
+        }
+
+        .active {
+            background-color: #222;
+        }
+    }
+}

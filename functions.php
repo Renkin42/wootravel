@@ -112,7 +112,8 @@ add_action( 'widgets_init', 'wootravel_widgets_init' );
 function wootravel_scripts() {
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,400,700' );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7' );
-	wp_enqueue_style( 'wootravel-style', get_stylesheet_uri() );
+	/* Use minified stylesheet */
+	wp_enqueue_style( 'wootravel-style', get_template_directory_uri() . '/css/wootravel.min.css');
 
 	if( !is_admin()){
     	wp_deregister_script( 'jquery' );

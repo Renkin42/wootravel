@@ -1,0 +1,46 @@
+#navbar-main {
+	background: rgba(0, 0, 0, 0.85);
+	margin: 5px;
+	border-radius: 7px;
+
+    .custom-logo {
+        margin: 10px;
+    }
+
+    .plugin-icon a {
+        padding: 5px 15px 5px;
+        font-size: 2.5 * $rem-fallback;
+	    font-size: 2.5rem;
+
+        @media(min-width: $screen-sm) {
+            padding: 15px 3px 5px;
+        }
+
+        .cart-count {
+            font-size: 1.5 * $rem-fallback;
+            font-size: 1.5rem;
+	        font-weight: bold;
+	        color: #000;
+	        position: absolute;
+	        left: 18.75px;
+	        top: 5px;
+	        width: 20px;
+	        text-align: center;
+
+            @media(min-width: $screen-sm) {
+                left: 7px;
+		        top: 16.25px;
+            }
+        }
+
+        .plugin-icon-label {
+            font-size: 1.75 * $rem-fallback;
+            font-size: 1.75rem;
+
+            @media(min-width: $screen-sm) {
+                display: none;
+            }
+        }
+    }
+}
+
