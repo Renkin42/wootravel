@@ -9,7 +9,7 @@
 
     .plugin-icon a {
         padding: 5px 15px 5px;
-        font-size: 2.5 * $rem-fallback;
+        font-size: 2.5 * $rem-fb;
 	    font-size: 2.5rem;
 
         @media(min-width: $screen-sm) {
@@ -17,7 +17,7 @@
         }
 
         .cart-count {
-            font-size: 1.5 * $rem-fallback;
+            font-size: 1.5 * $rem-fb;
             font-size: 1.5rem;
 	        font-weight: bold;
 	        color: #000;
@@ -34,7 +34,7 @@
         }
 
         .plugin-icon-label {
-            font-size: 1.75 * $rem-fallback;
+            font-size: 1.75 * $rem-fb;
             font-size: 1.75rem;
 
             @media(min-width: $screen-sm) {

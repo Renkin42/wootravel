@@ -1,5 +1,5 @@
-$text-font: Ubuntu, "Droid Sans", Tahoma, Geneva, Verdana, sans-serif;
-$code-font: "Courier New", Courier, monospace;
+$text-font: Ubuntu, Roboto, "San Francisco", "Segoe UI", sans-serif;
+$code-font: "Courier New", "Courier", monospace;
 
 body,
 button,
@@ -8,7 +8,7 @@ select,
 textarea {
 	color: #404040;
 	font-weight: 300;
-	font-size: 1.75 * $rem-fallback;
+	font-size: 1.75 * $rem-fb;
 	font-size: 1.75rem;
 	line-height: 1.5;
 	font-family: $text-font;
@@ -51,7 +51,7 @@ code,
 kbd,
 tt,
 var {
-    font-size: 0.9375 * $rem-fallback;
+    font-size: 0.9375 * $rem-fb;
     font-size: 0.9375rem;
     font-family: $code-font;
 
