@@ -1,5 +1,12 @@
+@import 'mixins';
+
 $text-font: Oxygen, Ubuntu, Cantarell, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 $code-font: "Courier New", Courier, monospace;
+
+html {
+	// Use browser font size settings.
+	font-size: 1em;
+}
 
 body,
 button,
@@ -8,8 +15,7 @@ select,
 textarea {
 	color: #404040;
 	font-weight: 300;
-	font-size: 1.75 * $rem-fb;
-	font-size: 1.75rem;
+	@include rem-fb(1.25);
 	line-height: 1.5;
 	font-family: $text-font;
 
@@ -51,8 +57,7 @@ code,
 kbd,
 tt,
 var {
-    font-size: 0.9375 * $rem-fb;
-    font-size: 0.9375rem;
+	@include rem-fb(0.75);
     font-family: $code-font;
 
     @media(min-width: $screen-sm) {

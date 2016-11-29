@@ -1,0 +1,4 @@
+@mixin rem-fb($size, $property: font-size) {
+	#{$property}: $size * $rem-px;
+	#{$property}: #{$size}rem;
+}
