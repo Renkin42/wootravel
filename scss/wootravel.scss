@@ -2,17 +2,10 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Typography
-# Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
 # Accessibility
-# Clearings
-# Widgets
 # Content
-# Infinite scroll
-# Media
 --------------------------------------------------------------*/
 
 $screen-sm: 768px;
@@ -27,30 +20,13 @@ $rem-px: 16px;
 @import 'typography';
 
 /*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-
-@import 'elements';
-
-/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-
-@import 'forms';
 
 @import 'searchform';
 
 /*--------------------------------------------------------------
 # Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-
-@import 'links';
-
-/*--------------------------------------------------------------
-## Menus
 --------------------------------------------------------------*/
 
 @import 'postnav';
@@ -66,45 +42,7 @@ $rem-px: 16px;
 @import 'accessibility';
 
 /*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-
-@import 'clearings';
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
-
-/* Make sure select elements fit in widgets. */
-.widget select {
-	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
 @import 'content';
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-
-@import 'media';

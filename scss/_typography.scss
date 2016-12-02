@@ -1,11 +1,7 @@
 @import 'mixins';
 
-$text-font: Oxygen, Ubuntu, Cantarell, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$code-font: "Courier New", Courier, monospace;
-
 html {
-	// Use browser font size settings.
-	font-size: 1em;
+	font-size: 16px;
 }
 
 body,
@@ -17,11 +13,7 @@ textarea {
 	font-weight: 300;
 	@include rem-fb(1.25);
 	line-height: 1.5;
-	font-family: $text-font;
-
-	@media(min-width: $screen-sm) {
-        font-family: "Fira Sans", $text-font;
-	}
+	font-family: "Fira Sans", Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 h1,
@@ -31,6 +23,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: "Spicy Rice", cursive;
+	font-weight: 400;
 }
 
 p {
@@ -58,11 +52,7 @@ kbd,
 tt,
 var {
 	@include rem-fb(0.75);
-    font-family: $code-font;
-
-    @media(min-width: $screen-sm) {
-        font-family: "Fira Mono", $code-font;
-    }
+    font-family: "Fira Mono", monospace;
 }
 
 pre {

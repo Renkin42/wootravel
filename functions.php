@@ -110,8 +110,8 @@ add_action( 'widgets_init', 'wootravel_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wootravel_scripts() {
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,400,700' );
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7' );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,400,700|Spicy+Rice' );
+	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '3.3.7' );
 	/* Use minified stylesheet */
 	wp_enqueue_style( 'wootravel-style', get_template_directory_uri() . '/css/wootravel.min.css');
 
@@ -123,7 +123,7 @@ function wootravel_scripts() {
 
 	wp_enqueue_script( 'wootravel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'wootravel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script( 'bootstrap-min-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7', true );
+	wp_enqueue_script( 'bootstrap-min-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array(), '3.3.7', true );
 
 
 

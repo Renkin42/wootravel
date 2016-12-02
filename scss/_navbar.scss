@@ -29,7 +29,7 @@
 
             @media(min-width: $screen-sm) {
                 @include rem-fb(0.5, left);
-                @include rem-fb(1.05, top);
+                @include rem-fb(1.15, top);
             }
         }
 
