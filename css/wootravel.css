@@ -102,11 +102,9 @@ big {
   padding-top: 8px;
   padding-bottom: 4px;
 }
-@media (min-width: 992px) {
-  #searchform-top > .searchform {
-    width: 274px;
-    width: 25vw;
-  }
+#searchform-top > .searchform {
+  width: 274px;
+  width: 25vw;
 }
 @media (min-width: 1200px) {
   #searchform-top > .searchform {
