@@ -1,4 +1,10 @@
 #top-carousel {
+    margin-top: 99px;
+
+    @media (min-width: $screen-md) {
+        margin-top: 55px;
+    }
+
     .item>img {
         height: 300px;
 	    width: 100%;

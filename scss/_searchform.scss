@@ -7,16 +7,18 @@
     }
 
     #searchform-top>& {
-        @media(min-width: $screen-sm) {
-            width: 10em;
-        }
-
         @media(min-width: $screen-md) {
-            width: 15em;
+            width: 274px;
+            width: 25vw;
         }
 
         @media(min-width: $screen-lg) {
-            width: 20em;
+            width: 478px;
+            width: 35vw;
         }
+    }
+
+    #searchform-top-sm>& {
+        margin: 0 0 10px;
     }
 }

@@ -84,9 +84,10 @@
 							</a>
 						</li>
 						<?php endif; ?>
-						<li id="searchform-top"><?php get_search_form(); ?></li>
+						<li id="searchform-top" class="hidden-xs hidden-sm"><?php get_search_form(); ?></li>
 					</ul>
 				</div>
+				<div id="searchform-top-sm" class="visible-xs visible-sm"><?php get_search_form(); ?></div>
     		</div>
 		</nav>
 	</header><!-- #masthead -->

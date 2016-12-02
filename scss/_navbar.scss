@@ -2,11 +2,15 @@
 
 #navbar-main {
 	background: rgba(0, 0, 0, 0.85);
-	margin: 5px;
-	border-radius: 7px;
 
     .custom-logo {
         margin: 10px;
+    }
+
+    .navbar-right {
+        @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
+            padding-right: 15px;
+        }
     }
 
     .plugin-icon a {
@@ -23,7 +27,7 @@
 	        color: #000;
 	        position: absolute;
 	        @include rem-fb(1.3, left);
-	        @include rem-fb(0.35, top);
+	        @include rem-fb(0.5, top);
 	        width: 20px;
 	        text-align: center;
 

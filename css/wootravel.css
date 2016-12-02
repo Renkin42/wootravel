@@ -102,20 +102,20 @@ big {
   padding-top: 8px;
   padding-bottom: 4px;
 }
-@media (min-width: 768px) {
-  #searchform-top > .searchform {
-    width: 10em;
-  }
-}
 @media (min-width: 992px) {
   #searchform-top > .searchform {
-    width: 15em;
+    width: 274px;
+    width: 25vw;
   }
 }
 @media (min-width: 1200px) {
   #searchform-top > .searchform {
-    width: 20em;
+    width: 478px;
+    width: 35vw;
   }
+}
+#searchform-top-sm > .searchform {
+  margin: 0 0 10px;
 }
 
 /*--------------------------------------------------------------
@@ -144,11 +144,14 @@ big {
 
 #navbar-main {
   background: rgba(0, 0, 0, 0.85);
-  margin: 5px;
-  border-radius: 7px;
 }
 #navbar-main .custom-logo {
   margin: 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #navbar-main .navbar-right {
+    padding-right: 15px;
+  }
 }
 #navbar-main .plugin-icon a {
   padding: 5px 15px 5px;
@@ -168,8 +171,8 @@ big {
   position: absolute;
   left: 20.8px;
   left: 1.3rem;
-  top: 5.6px;
-  top: 0.35rem;
+  top: 8px;
+  top: 0.5rem;
   width: 20px;
   text-align: center;
 }
@@ -191,6 +194,14 @@ big {
   }
 }
 
+#top-carousel {
+  margin-top: 99px;
+}
+@media (min-width: 992px) {
+  #top-carousel {
+    margin-top: 55px;
+  }
+}
 #top-carousel .item > img {
   height: 300px;
   width: 100%;
