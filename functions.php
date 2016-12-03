@@ -98,8 +98,8 @@ function wootravel_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'wootravel' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'wootravel' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s content-box col-xs-6 col-sm-12">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s content-padding col-xs-6 col-sm-12"><div class="content-box">',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );

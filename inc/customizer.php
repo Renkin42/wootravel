@@ -131,6 +131,22 @@ function wootravel_customize_register( $wp_customize ) {
 			) );
 		}
 	}
+
+	$wp_customize->add_setting( 'navbar_background' );
+	$wp_customize->add_setting( 'content_background' );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+		$wp_customize, 'navbar_background_control', array(
+			'label'    => __( 'Navigation Bar Background Image', 'wootravel' ),
+			'section'  => 'background_image',
+			'settings' => 'navbar_background'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+		$wp_customize, 'navbar_background_control', array(
+			'label'    => __( 'Content Box Background Image', 'wootravel' ),
+			'section'  => 'background_image',
+			'settings' => 'content_background'
+	) ) );
 }
 add_action( 'customize_register', 'wootravel_customize_register' );
 
