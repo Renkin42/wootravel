@@ -142,7 +142,7 @@ function wootravel_customize_register( $wp_customize ) {
 			'settings' => 'navbar_background'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Image_Control(
-		$wp_customize, 'navbar_background_control', array(
+		$wp_customize, 'content_background_control', array(
 			'label'    => __( 'Content Box Background Image', 'wootravel' ),
 			'section'  => 'background_image',
 			'settings' => 'content_background'
