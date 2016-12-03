@@ -147,6 +147,20 @@ function wootravel_customize_register( $wp_customize ) {
 			'section'  => 'background_image',
 			'settings' => 'content_background'
 	) ) );
+
+	$wp_customize->add_section( 'wootravel_custom_css', array(
+		'title' => __( 'Custom CSS', 'wootravel' ),
+		'priority' => 90
+	) );
+
+	$wp_customize->add_setting( 'custom_css' );
+
+	$wp_customize->add_control( 'custom_css_control', array(
+		'label'    => __( 'Custom CSS', 'wootravel' ),
+		'section'  => 'wootravel_custom_css',
+		'settings' => 'custom_css',
+		'type'     => 'textarea'
+	) );
 }
 add_action( 'customize_register', 'wootravel_customize_register' );
 

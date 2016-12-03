@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
-<?php require_once get_template_directory() . '/inc/custom-css.php'; ?>
+<?php include get_template_directory() . '/inc/custom-css.php'; ?>
 </head>
 
 <body <?php body_class(); ?>>

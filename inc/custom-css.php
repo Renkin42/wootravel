@@ -12,5 +12,8 @@
         background-color: transparent;
         background-image: url("<?php echo get_theme_mod( 'navbar_background' ); ?>");
     }
-    <?php endif; ?>
+    <?php endif; 
+    if ( get_theme_mod( 'custom_css' ) ) :
+    echo get_theme_mod( 'custom_css' );
+    endif; ?>
 </style>
