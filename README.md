@@ -12,8 +12,8 @@ Custom CSS
 ----------
 The customizer includes a "Custom CSS" setting. Any css typed into this box will be placed in a `<style>` tag in the head, so it should override the stylesheet in most cases. If it foesn't, check that your selectors are specific enough. Nested sass can be wierd about that.
 
-![Custom CSS Example](./readme-resources/CustomCSS1.png)
-![Custom CSS Result](./readme-resources/CustomCSS2.png)
+![Custom CSS Example](./readme-resources/CustomCSS_1.png)
+![Custom CSS Result](./readme-resources/CustomCSS_2.png)
 
 Also wordpress text areas don't allow tabs, so just use 4 spaces if you really care about that sort of thing.
 
