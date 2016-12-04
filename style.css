@@ -16,6 +16,6 @@ Woo Traveller is based on Underscores http://underscores.me/, (C) 2012-2016 Auto
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Pleae note that style.css is only present for WordPress theme metadata purposes. It contains no markup and is not loaded into the webpage.
-All markup is contained in css/wootravel.min.css. If custom css is required it is reccomended to create a child theme or use a custom-css
-pluugin such as jetpack.
+All markup is contained in css/wootravel.min.css. If custom css is required it is reccomended to use the "Custom CSS" option in the customizer.
+Alternately you could create a child theme or use a custom-css pluugin such as jetpack.
 */
