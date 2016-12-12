@@ -12,7 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 </div>
-<div class="col-sm-4">
+<div class="col-sm-3">
 	<div class="widget-area row">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>

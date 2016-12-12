@@ -17,7 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
-<?php include get_template_directory() . '/inc/custom-css.php'; ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -182,4 +181,4 @@
 			<?php endif; ?>
 	<div class="container-fluid">
 		<div class="row">
-			<div id="content" class="site-content col-sm-8">
+			<div id="content" class="site-content col-sm-9">

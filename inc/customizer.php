@@ -149,18 +149,66 @@ function wootravel_customize_register( $wp_customize ) {
 	) ) );
 
 	$wp_customize->add_section( 'wootravel_custom_css', array(
-		'title' => __( 'Custom CSS', 'wootravel' ),
+		'title'    => __( 'Custom CSS', 'wootravel' ),
 		'priority' => 90
 	) );
+	$wp_customize->add_section( 'wootravel_content_area', array(
+		'title'    => __( 'Content Area Style', 'wootravel' ),
+		'priority' => 91
+	) );
 
-	$wp_customize->add_setting( 'custom_css' );
+	$wp_customize->add_setting( 'custom_stylesheet', array(
+		'default'   => '',
+		'transport' => 'postMessage'
+	) );
+	$wp_customize->add_setting( 'content_radius_top_left', array(
+		'default' => 10,
+		'transport' => 'postMessage'
+	) );
+	$wp_customize->add_setting( 'content_radius_top_right', array(
+		'default' => 10,
+		'transport' => 'postMessage'
+	) );
+	$wp_customize->add_setting( 'content_radius_bottom_left', array(
+		'default' => 10,
+		'transport' => 'postMessage'
+	) );
+	$wp_customize->add_setting( 'content_radius_bottom_right', array(
+		'default' => 10,
+		'transport' => 'postMessage'
+	) );
 
 	$wp_customize->add_control( 'custom_css_control', array(
 		'label'    => __( 'Custom CSS', 'wootravel' ),
 		'section'  => 'wootravel_custom_css',
-		'settings' => 'custom_css',
+		'settings' => 'custom_stylesheet',
 		'type'     => 'textarea'
 	) );
+	$wp_customize->add_control( 'top_left_radius_control', array(
+		'label'    => __( 'Top Left Border Radius', 'wootravel' ),
+		'section'  => 'wootravel_content_area',
+		'settings' => 'content_radius_top_left',
+		'type'     => 'number'
+	) );
+	$wp_customize->add_control( 'top_right_radius_control', array(
+		'label'    => __( 'Top Right Border Radius', 'wootravel' ),
+		'section'  => 'wootravel_content_area',
+		'settings' => 'content_radius_top_right',
+		'type'     => 'number'
+	) );
+	$wp_customize->add_control( 'bottom_left_radius_control', array(
+		'label'    => __( 'Bottom Left Border Radius', 'wootravel' ),
+		'section'  => 'wootravel_content_area',
+		'settings' => 'content_radius_bottom_left',
+		'type'     => 'number'
+	) );
+	$wp_customize->add_control( 'bottom_right_radius_control', array(
+		'label'    => __( 'Bottom Right Border Radius', 'wootravel' ),
+		'section'  => 'wootravel_content_area',
+		'settings' => 'content_radius_bottom_right',
+		'type'     => 'number'
+	) );
+	
 }
 add_action( 'customize_register', 'wootravel_customize_register' );
 
