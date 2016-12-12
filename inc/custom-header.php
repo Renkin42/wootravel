@@ -73,7 +73,7 @@ function wootravel_header_style() {
         background-image: url("<?php echo get_theme_mod( 'navbar_background' ); ?>");
     }
     <?php endif; ?>
-	.content_box {
+	.content-box {
 		border-top-left-radius: <?php echo get_theme_mod( 'content_radius_top_left', 10 ); ?>px;
 		border-top-right-radius: <?php echo get_theme_mod( 'content_radius_top_right', 10 ); ?>px;
 		border-bottom-left-radius: <?php echo get_theme_mod( 'content_radius_bottom_left', 10 ); ?>px;
@@ -81,7 +81,7 @@ function wootravel_header_style() {
 	}
 
 	.content-box h1,
-	.content box h2 {
+	.content-box h2 {
 		border-top-left-radius: <?php echo get_theme_mod( 'content_radius_top_left', 10 ); ?>px;
 		border-top-right-radius: <?php echo get_theme_mod( 'content_radius_top_right', 10 ); ?>px;
 	}

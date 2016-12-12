@@ -158,23 +158,24 @@ function wootravel_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'custom_stylesheet', array(
-		'default'   => '',
-		'transport' => 'postMessage'
+		'default'            => '',
+		'transport'          => 'postMessage',
+		'santitize_callback' => 'sanitize_custom_css'
 	) );
 	$wp_customize->add_setting( 'content_radius_top_left', array(
-		'default' => 10,
+		'default'   => 10,
 		'transport' => 'postMessage'
 	) );
 	$wp_customize->add_setting( 'content_radius_top_right', array(
-		'default' => 10,
+		'default'   => 10,
 		'transport' => 'postMessage'
 	) );
 	$wp_customize->add_setting( 'content_radius_bottom_left', array(
-		'default' => 10,
+		'default'   => 10,
 		'transport' => 'postMessage'
 	) );
 	$wp_customize->add_setting( 'content_radius_bottom_right', array(
-		'default' => 10,
+		'default'   => 10,
 		'transport' => 'postMessage'
 	) );
 
@@ -219,5 +220,10 @@ function wootravel_customize_preview_js() {
 	wp_enqueue_script( 'wootravel_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'wootravel_customize_preview_js' );
+
+function sanitize_custom_css( $css ) {
+	//replace 4 spaces with a tab and then escape any potential html tags.
+	return esc_html( str_replace( '    ', '\t', $css ) );
+}
 
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
