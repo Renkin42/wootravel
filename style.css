@@ -1,21 +1,14 @@
 /*
-Theme Name: Woo Traveller
-Theme URI: http://underscores.me/
-Author: Austin Leydecker
-Author URI: http://www.renkin42.net/
-Description: A minimalist theme featuring support for WooCommerce and Event Organizer and optimized for travelling salesmen and entertainers.
-Version: 1.0.0
-License: Mozilla Public License 2.0
-License URI: https://www.mozilla.org/en-US/MPL/2.0/
-Text Domain: wootravel
-Tags:
+Theme Name: Woo Travel
+Theme URI: http://www.renkin42.net
+Description: A material design theme featuring tight tight integration with WooCommerce and Event Organiser, ideal for travelling entepeneurs.
+Version: 1.0
+Author: Austin R. Leydecker
+Author URI: http://www.renkin42.net
 
-This theme is licensed under the Mozilla Public License 2.0 and, as such, is GPL-compatiple.
+This theme is licensed under MPL 2.0
 
-Woo Traveller is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Pleae note that style.css is only present for WordPress theme metadata purposes. It contains no markup and is not loaded into the webpage.
-All markup is contained in css/wootravel.min.css. If custom css is required it is reccomended to use the "Custom CSS" option in the customizer.
-Alternately you could create a child theme or use a custom-css pluugin such as jetpack.
+Please note that style.css is not loaded for theming purposes. It is only present for theme metadata. 
+If you wish to use custom css, it is reccomended that you install a pluggin which offers this feature,
+such as jetpack.
 */
