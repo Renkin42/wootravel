@@ -1,4 +1,8 @@
 /* Woo Travel Main CSS File *
  * Licensed under MPL 2.0   */
+main {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
 
 /*# sourceMappingURL=wootravel.css.map */

@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;8BAC8B",
+"mappings": "AAAA;8BAC8B;AAI9B,IAAK;EACH,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI",
 "sources": ["../scss/wootravel.scss"],
 "names": [],
 "file": "wootravel.css"

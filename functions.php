@@ -18,6 +18,9 @@ function wootravel_setup() {
     add_image_size('main-full', 1078, 516, false); // main post image in full width
 }
 
+/**
+ * Add css and external scripts
+ */
 function wootravel_enqueue_scripts() {
     wp_enqueue_style( 'Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'Bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' );
@@ -30,5 +33,22 @@ function wootravel_enqueue_scripts() {
     wp_enqueue_script( 'MDB', 'https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js', array(), '4.3.2' );
 }
 
+/**
+ * Register our sidebars and widgetized areas.
+ */
+function wootravel_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Sidebar',
+    'id'            => 'sidebar',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '',
+    'after_title'   => '',
+  ) );
+
+}
+
 add_action('after_setup_theme', 'wootravel_setup');
 add_action( 'wp_enqueue_scripts', 'wootravel_enqueue_scripts' );
+add_action( 'widgets_init', 'wootravel_widgets_init' );
