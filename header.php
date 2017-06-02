@@ -37,6 +37,14 @@
             echo "Please assign Navbar Menu in Wordpress Admin -> Appearance -> Menus -> Manage Locations";
             ?>
             <?php get_search_form(); ?>
+            <ul class="user-icons">
+                <li>
+                    <i class="fa fa-2x fa-shopping-cart"></i>
+                </li>
+                <li>
+                    <i class="fa fa-2x fa-calendar"></i>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
