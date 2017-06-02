@@ -36,9 +36,7 @@
             } else
             echo "Please assign Navbar Menu in Wordpress Admin -> Appearance -> Menus -> Manage Locations";
             ?>
-            <form class="form-inline waves-effect waves-light">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+            <?php get_search_form(); ?>
         </div>
     </div>
 </nav>
