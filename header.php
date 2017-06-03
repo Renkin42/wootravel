@@ -39,10 +39,20 @@
             <?php get_search_form(); ?>
             <ul class="user-icons">
                 <li>
-                    <i class="fa fa-2x fa-shopping-cart"></i>
+                    <a href="#">
+                        <i class="fa fa-2x fa-calendar"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa fa-2x fa-calendar"></i>
+                    <a href="#">
+                        <i class="fa fa-2x fa-shopping-cart"></i>
+                        <span class="cart-count text-primary">99</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-2x fa-user"></i>
+                    </a>
                 </li>
             </ul>
         </div>

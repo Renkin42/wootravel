@@ -6,21 +6,43 @@ main {
 }
 
 ul.user-icons {
-  color: #fff;
   margin: 0;
+}
+@media (min-width: 992px) {
+  ul.user-icons {
+    margin-left: 10px;
+  }
 }
 ul.user-icons > li {
   float: left;
-  padding: 10px 15px 5px 15px;
+  padding: 10px 20px 5px 20px;
 }
 @media (min-width: 992px) {
   ul.user-icons > li {
     padding: 3px 7px 0 7px;
   }
 }
+ul.user-icons > li > a {
+  color: #fff;
+  transition: .35s;
+  position: relative;
+}
+ul.user-icons > li > a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+ul.user-icons > li .cart-count {
+  position: absolute;
+  top: -9px;
+  left: 8px;
+  width: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 form.search-form input.search-box {
-  margin-right: 0;
+  margin: 0 0 1px 0;
+  width: auto;
 }
 form.search-form input.search-box:focus {
   border-bottom-color: #fff;
@@ -31,6 +53,8 @@ form.search-form .search-button {
   border: none;
   border-bottom: 1px solid #fff;
   line-height: 1rem;
+  display: inline-block;
+  width: auto;
 }
 form.search-form .search-button:hover {
   color: #fff;
