@@ -9,3 +9,12 @@
         @content;
     }
 }
+
+@mixin carousel-control() {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}

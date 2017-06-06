@@ -71,3 +71,20 @@ form.search-form {
     }
   }
 }
+
+#carousel-top {
+  .carousel-item > img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-control-prev {
+    @include carousel-control;
+    margin-left: 20px;
+  }
+
+  .carousel-control-next {
+    @include carousel-control;
+    margin-right: 20px;
+  }
+}
