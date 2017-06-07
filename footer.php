@@ -1,3 +1,6 @@
+        </div>
+    </div>
+</main>
 <!--Footer-->
 <footer class="page-footer blue center-on-small-only">
        <!--Footer Links-->

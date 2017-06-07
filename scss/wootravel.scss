@@ -73,9 +73,24 @@ form.search-form {
 }
 
 #carousel-top {
-  .carousel-item > img {
-    width: 100%;
-    object-fit: cover;
+  height: 500px;
+  overflow: hidden;
+
+  &.not-front {
+    height: 200px;
+  }
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .carousel-control-prev {

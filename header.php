@@ -13,7 +13,7 @@
 </head> 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-toggleable-md navbar-dark primary-color sticky-top z-depth-3">
+<nav class="navbar navbar-toggleable-md navbar-dark primary-color sticky-top z-depth-2">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -100,3 +100,7 @@
     <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
+<main class="container">
+    <div class="row">
+        <!--Main Content-->
+        <div class="col">
