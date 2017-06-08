@@ -103,3 +103,23 @@ form.search-form {
     margin-right: 20px;
   }
 }
+
+.big-card {
+  height: 100%;
+  
+  .card-block {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.event-image {
+  overflow: hidden;
+
+   > img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+   }
+}
