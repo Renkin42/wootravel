@@ -1,10 +1,6 @@
 /* Woo Travel Main CSS File *
  * Licensed under MPL 2.0   */
-main {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
+/* Page Header */
 ul.user-icons {
   margin: 0;
 }
@@ -94,6 +90,12 @@ form.search-form .search-button:hover {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 20px;
+}
+
+/* Main Page */
+main {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .big-card {

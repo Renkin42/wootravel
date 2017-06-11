@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container-fluid">
     <div id="featured-products" class="row">
-        <div class="col primary-color white-text text-center p-1 mb-1 z-depth-1">
+        <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
             <h1>Featured Products</h1>
         </div>
     </div>
@@ -20,7 +20,7 @@
                     <h4 class="card-title">Card title</h4>
                     <!--Text-->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <a href="#" class="btn theme-primary-color">Button</a>
                 </div>
                 <!--/.Card content-->
 
@@ -43,7 +43,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
 
@@ -64,7 +64,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
 
@@ -87,7 +87,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
 
@@ -108,7 +108,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
 
@@ -119,7 +119,7 @@
         </div>
     </div>
     <div id="upcoming-events" class="row">
-        <div class="col primary-color white-text text-center p-1 mb-1 z-depth-1">
+        <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
             <h1>Upcoming Events</h1>
         </div>
     </div>
@@ -140,7 +140,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
                     </div>
@@ -166,7 +166,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
                     </div>
@@ -192,7 +192,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
                     </div>
@@ -202,7 +202,7 @@
         </div>
     </div>
     <div id="about-us" class="row">
-        <div class="col primary-color white-text text-center p-1 mb-1 z-depth-1">
+        <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
             <h1>About Us</h1>
         </div>
     </div>
@@ -223,7 +223,7 @@
                             <h4 class="card-title">Card title</h4>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn theme-primary-color">Button</a>
                         </div>
                         <!--/.Card content-->
                     </div>

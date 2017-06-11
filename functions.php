@@ -16,6 +16,7 @@ function wootravel_setup() {
     // Add featured image support
     add_theme_support('post-thumbnails');
     add_image_size('main-full', 1078, 516, false); // main post image in full width
+    show_admin_bar( false );
 }
 
 /**
@@ -61,6 +62,7 @@ function wootravel_customize_register( $wp_customize ) {
         'section' => 'colors',
     ) ) );
 
+    $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
 }
 
 function wootravel_customizer_live_preview() {

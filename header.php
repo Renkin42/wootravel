@@ -11,23 +11,23 @@
     </title>
     <?php wp_head(); ?>
     <style type="text/css">
-        .primary-color, .btn-primary {
-            background-color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>!important;
+        .theme-primary-color, footer.page-footer {
+            background-color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>;
         }
-        .text-primary {
-            color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>!important;
+        .theme-text-primary {
+            color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>;
         }
     </style>
 </head> 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-toggleable-md navbar-dark primary-color sticky-top z-depth-2">
+<nav class="navbar navbar-toggleable-md navbar-dark theme-primary-color sticky-top z-depth-2">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            <strong>Navbar</strong>
+        <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+            <strong id="site-name"><?php echo get_bloginfo( 'name' ); ?></strong>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1">          
             <?php
@@ -54,7 +54,7 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-2x fa-shopping-cart"></i>
-                        <span class="cart-count text-primary">99</span>
+                        <span class="cart-count theme-text-primary">99</span>
                     </a>
                 </li>
                 <li>
@@ -62,6 +62,13 @@
                         <i class="fa fa-2x fa-user"></i>
                     </a>
                 </li>
+                <?php if(current_user_can( 'level_10' )): ?>
+                <li>
+                    <a href="<?php echo get_admin_url(); ?>" title="Dashboard">
+                        <i class="fa fa-2x fa-dashboard"></i>
+                    </a>
+                </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
@@ -97,11 +104,11 @@
     </div>
     <!--/.Slides-->
     <!--Controls-->
-    <a class="carousel-control-prev primary-color hoverable" href="#carousel-top" role="button" data-slide="prev">
+    <a class="carousel-control-prev theme-primary-color hoverable" href="#carousel-top" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next primary-color hoverable" href="#carousel-top" role="button" data-slide="next">
+    <a class="carousel-control-next theme-primary-color hoverable" href="#carousel-top" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
