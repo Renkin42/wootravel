@@ -2,7 +2,7 @@
     </div>
 </main>
 <!--Footer-->
-<footer class="page-footer blue center-on-small-only">
+<footer class="page-footer primary-color center-on-small-only">
        <!--Footer Links-->
     <div class="container-fluid">
         <div class="row">
@@ -59,7 +59,7 @@
     <!--/.Footer Links-->
 
     <!--Copyright-->
-    <div class="footer-copyright">
+    <div class="footer-copyright primary-color-dark">
         <div class="container-fluid">
             © 2017 Copyright: <a href="https://www.MDBootstrap.com"  rel="nofollow"> MDBootstrap.com </a>
 

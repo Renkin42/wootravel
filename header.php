@@ -10,6 +10,14 @@
         <?php bloginfo( 'name'); ?>
     </title>
     <?php wp_head(); ?>
+    <style type="text/css">
+        .primary-color, .btn-primary {
+            background-color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>!important;
+        }
+        .text-primary {
+            color: <?php echo get_theme_mod('primary_color', '#4285F4'); ?>!important;
+        }
+    </style>
 </head> 
 <body>
 <!--Navbar-->
