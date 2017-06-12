@@ -19,7 +19,7 @@
         }
     </style>
 </head> 
-<body>
+<body <?php body_class(); ?>>
 <!--Navbar-->
 <nav class="navbar navbar-toggleable-md navbar-dark theme-primary-color sticky-top z-depth-2">
     <div class="container">
@@ -27,7 +27,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+            <?php if( has_custom_logo() ): ?>
+            <img src="<?php echo wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' )[0]; ?>"></img>
+            <?php else: ?>
             <strong id="site-name"><?php echo get_bloginfo( 'name' ); ?></strong>
+            <?php endif; ?>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1">          
             <?php
@@ -53,8 +57,9 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-2x fa-shopping-cart"></i>
-                        <span class="cart-count theme-text-primary">99</span>
+                        <i class="fa fa-2x fa-shopping-cart">
+                            <span class="cart-count theme-text-primary">99</span>
+                        </i>
                     </a>
                 </li>
                 <li>

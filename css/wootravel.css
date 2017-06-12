@@ -28,12 +28,17 @@ ul.user-icons > li > a:hover {
 }
 ul.user-icons > li .cart-count {
   position: absolute;
-  top: -9px;
-  left: 8px;
+  top: -5px;
+  left: 6px;
   width: 20px;
   font-size: 0.85rem;
   font-weight: bold;
   text-align: center;
+}
+@media (min-width: 992px) {
+  ul.user-icons > li .cart-count {
+    left: 8px;
+  }
 }
 
 form.search-form input.search-box {

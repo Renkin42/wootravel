@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div id="featured-products" class="row">
         <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
-            <h1>Featured Products</h1>
+            <h1 class="mb-0">Featured Products</h1>
         </div>
     </div>
     <div class="row">
@@ -120,7 +120,7 @@
     </div>
     <div id="upcoming-events" class="row">
         <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
-            <h1>Upcoming Events</h1>
+            <h1 class="mb-0">Upcoming Events</h1>
         </div>
     </div>
     <div class="row">
@@ -203,7 +203,7 @@
     </div>
     <div id="about-us" class="row">
         <div class="col theme-primary-color white-text text-center p-1 mb-1 z-depth-1">
-            <h1>About Us</h1>
+            <h1 class="mb-0">About Us</h1>
         </div>
     </div>
     <div class="row">
