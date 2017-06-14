@@ -53,13 +53,13 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-2x fa-calendar"></i>
+                        <span class="icon-number theme-text-primary z-depth-1">7</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-2x fa-shopping-cart">
-                            <span class="cart-count theme-text-primary">99</span>
-                        </i>
+                        <i class="fa fa-2x fa-shopping-cart"></i>
+                        <span class="icon-number theme-text-primary z-depth-1">99</span>
                     </a>
                 </li>
                 <li>
