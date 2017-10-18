@@ -1,7 +1,4 @@
 #!/bin/bash
 # This is a simple shell script to compile sass files to css and min.css files.
 
-sass sass/wootravel.scss css/wootravel.css --style expanded
-echo Full CSS Updated!
-sass sass/wootravel.scss css/wootravel.min.css --style compressed
-echo Minified CSS Updated!
+sass sass\style.scss style.css --style compressed
