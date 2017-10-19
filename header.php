@@ -21,63 +21,26 @@
 </head> 
 <body <?php body_class(); ?>>
 <!--Navbar-->
-<nav class="navbar navbar-toggleable-md navbar-dark theme-primary-color sticky-top z-depth-2">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
-            <?php if( has_custom_logo() ): ?>
-            <img src="<?php echo wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' )[0]; ?>"></img>
-            <?php else: ?>
-            <strong id="site-name"><?php echo get_bloginfo( 'name' ); ?></strong>
-            <?php endif; ?>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav1">          
-            <?php
-            if ( has_nav_menu( 'navbar' ) ) {
-            wp_nav_menu( array(
-            'menu'              => 'navbar',
-            'theme_location'    => 'navbar',
-            'depth'             => 2,
-            'menu_class'        => 'navbar-nav mr-auto',
-            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-            'container'         => false,
-            'walker'            => new MDBBootstrapNavMenuWalker())
-            );
-            } else
-            echo "Please assign Navbar Menu in Wordpress Admin -> Appearance -> Menus -> Manage Locations";
-            ?>
-            <?php get_search_form(); ?>
-            <ul class="user-icons">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-2x fa-calendar"></i>
-                        <span class="icon-number theme-text-primary z-depth-1">7</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-2x fa-shopping-cart"></i>
-                        <span class="icon-number theme-text-primary z-depth-1">99</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-2x fa-user"></i>
-                    </a>
-                </li>
-                <?php if(current_user_can( 'level_10' )): ?>
-                <li>
-                    <a href="<?php echo get_admin_url(); ?>" title="Dashboard">
-                        <i class="fa fa-2x fa-dashboard"></i>
-                    </a>
-                </li>
-                <?php endif; ?>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper theme-primary-color">
+            <a href="#" class="brand-logo center">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><?php mico('menu'); ?></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">Javascript</a></li>
+              <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">Javascript</a></li>
+              <li><a href="mobile.html">Mobile</a></li>
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
 <!--/.Navbar-->
 
 <!--Carousel Wrapper-->
